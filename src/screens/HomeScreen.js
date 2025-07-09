@@ -115,6 +115,7 @@ export default function HomeScreen() {
               color={favourites.includes('mic1') ? '#d00' : '#000'}
             />
           </TouchableOpacity>
+          <View style={{flexDirection:'row',justifyContent:'space-around'}}>
            <Image
               source={imageMap['mic']}
               style={styles.micImage}
@@ -140,6 +141,8 @@ export default function HomeScreen() {
           <Text style={styles.productDesc}>Dynamic microphone</Text>
            
           </TouchableOpacity>
+
+          </View>
 
         </View>
       </View>
@@ -210,7 +213,7 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: { flex: 1, paddingHorizontal: rw(4), backgroundColor: '#fff' },
   header: { marginTop: rh(3) },
-  greeting: { fontSize: rf(3), fontWeight: 'bold' },
+  greeting: { fontSize: rf(3), fontWeight: 'bold',color:'#000' },
   tabButton: {
     paddingVertical: rh(1),
     paddingHorizontal: rw(4),
